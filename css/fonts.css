@@ -1,0 +1,55 @@
+/* corsicalx regular */
+@font-face {
+	font-family: 'corsicalx-regular';
+	src: url('../fonts/corsicalx/regular/corsicalx-regular.eot');
+	src: url('../fonts/corsicalx/regular/corsicalx-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/regular/corsicalx-regular.woff') format('woff'),
+	url('../fonts/corsicalx/regular/corsicalx-regular.ttf') format('truetype'),
+	url('../fonts/corsicalx/regular/corsicalx-regular.svg#corsicalx-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx italic */
+@font-face {
+	font-family: 'corsicalx-italic';
+	src: url('../fonts/corsicalx/italic/corsicalx-regularitalic.eot');
+	src: url('../fonts/corsicalx/italic/corsicalx-regularitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/italic/corsicalx-regularitalic.woff') format('woff'),
+	url('../fonts/corsicalx/italic/corsicalx-regularitalic.ttf') format('truetype'),
+	url('../fonts/corsicalx/italic/corsicalx-regularitalic.svg#corsicalx-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx bold */
+@font-face {
+	font-family: 'corsicalx-bold';
+	src: url('../fonts/corsicalx/bold/corsicalx-bold.eot');
+	src: url('../fonts/corsicalx/bold/corsicalx-bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/bold/corsicalx-bold.woff') format('woff'),
+	url('../fonts/corsicalx/bold/corsicalx-bold.ttf') format('truetype'),
+	url('../fonts/corsicalx/bold/corsicalx-bold.svg#corsicalx-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx bold italic */
+@font-face {
+	font-family: 'corsicalx-bold-italic';
+	src: url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.eot');
+	src: url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.woff') format('woff'),
+	url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.ttf') format('truetype'),
+	url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.svg#corsicalx-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx light */
+@font-face {
+	font-family: 'corsicalx-light';
+	src: url('../fonts/corsicalx/light/corsicalx-light.eot');
+	src: url('../fonts/corsicalx/light/corsicalx-light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/light/corsicalx-light.woff') format('woff'),
+	url('../fonts/corsicalx/light/corsicalx-light.ttf') format('truetype'),
+	url('../fonts/corsicalx/light/corsicalx-light.svg#corsicalx-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

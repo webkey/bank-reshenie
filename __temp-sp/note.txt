@@ -1,0 +1,20 @@
+Sprite created with the online service http://spritegen.website-performance.org/
+
+Parameters.
+Ignore duplicate images
+Width: 100%
+Height: 100%
+Maintain aspect ratio: yes
+Build Direction: vertical
+Horizontal Offset: 20 px
+Vertical Offset: 20 px
+Wrap columns to fix Opera bug: yes
+Output Format: png
+Number of Colours: true colour
+Image Quality: 75%
+Compress Image with OptiPNG: no
+CSS Prefix (optional): (empty)
+Filename Pattern Match (optional): (empty)
+Class Prefix (optional): (empty)
+CSS Suffix (optional): (empty)
+Display width and height (optional): yes
