@@ -88,6 +88,7 @@
 								&nbsp;&ndash;&nbsp;<em>#ee82ee</em>
 								<div style="clear: both;"></div>
 							</div>
+							<a href="#" class="btn-print"><i class="depict-print"></i><span>Версия для печати</span></a>
 						</div>
 						<p>В последнее время участились случаи получения абонентами белорусских операторов мобильной связи коротких SMS-сообщений с текстом примерно следующего содержания: «Поздравляем!!! По итогам акции на платежных терминалах с услугой ЕРИП Вы стали обладателем главного приза. Звоните +7 (964) 985-34-45. Информационный сайт ERIP.lact.ru». Информация, предоставленная в данном сообщении, является недостоверной. Просим не поддаваться на провокации злоумышленников. Фактически в данном SMS-сообщении мошенники предлагают посетить сайт, который содержит в названии только аббревиатуру ЕРИП, знакомую и очень привычную белорусским гражданам. После контакта с мошенниками (через сайт или посредством телефона) даются инструкции, согласно которым пострадавшие самостоятельно производят действия по списанию денежных средств со счета, привязанного к номеру мобильного телефона, и их отправку на электронный кошелек в системе WebMoney. Информация, предоставленная в данном сообщении, является недостоверной.</p>
 						<p>Информация, предоставленная в данном сообщении, является недостоверной. Просим не поддаваться на провокации злоумышленников. Фактически в данном SMS-сообщении мошенники предлагают посетить сайт, который содержит в названии только аббревиатуру ЕРИП, знакомую и очень привычную белорусским гражданам. После контакта с мошенниками (через сайт или посредством телефона) даются инструкции, согласно которым пострадавшие самостоятельно производят действия по списанию денежных средств со счета, привязанного к номеру мобильного телефона, и их отправку на электронный кошелек в системе WebMoney.</p>
@@ -375,113 +376,202 @@
 
 						<!--style default button-->
 						<div style="padding: 0 0 20px;">
-							<a href="#" class="btn-default">Отправить заявку</a>
+							<a href="#" class="btn-default"><span>Отправить заявку</span></a>
 						</div>
 						<div style="padding: 0 0 20px;">
-							<input type="submit" value="Type submit">
-							<input type="button" value="Type button">
-							<input type="reset" value="Type reset">
-							<button>Button</button>
-						</div>
-						<div style="padding: 0 0 20px;">
-							<input class="btn-default-alt" type="submit" value="Type submit">
-							<input class="btn-default-alt" type="button" value="Type button">
-							<input class="btn-default-alt" type="reset" value="Type reset">
-							<button class="btn-default-alt">Button</button>
+							<form action="">
+								<input type="submit" value="Type submit">
+								<input type="button" value="Type button">
+								<input type="reset" value="Type reset">
+								<button>Button</button>
+							</form>
 						</div>
 						<!--style default button end-->
 
 						<!--form style-->
-						<form action="#" method="get">
-							<div class="label-holder">
-								<label for="expl-label-01">Пример текстового поля с плейсхолдером: <span class="form-mark">*</span></label>
-							</div>
-							<input type="text" placeholder="Текстовое поле" id="expl-label-01" />
-							<div class="label-holder">
-								<label for="expl-label-02">Пример невалидного текстового поля: <span class="form-mark">*</span></label>
-							</div>
-							<input class="error" type="text" placeholder="Невалидное поле" id="expl-label-02" />
-							<div class="form-row">
-								<div class="input-wrap">
-									<div class="label-holder">
-										<label for="expl-label-03">Текстовое поле первое: <span class="form-mark">*</span></label>
-									</div>
-									<input type="text" placeholder="Текстовое поле первое" id="expl-label-03" />
-								</div>
-								<div class="input-wrap">
-									<div class="label-holder">
-										<label for="expl-label-04">Текстовое поле второе: <span class="form-mark">*</span></label>
-									</div>
-									<input type="text" placeholder="Текстовое поле второе" id="expl-label-04" />
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="input-wrap">
-									<div class="label-holder">
-										<label for="expl-label-05">Текстовое поле третье: <span class="form-mark">*</span></label>
-									</div>
-									<input type="text" placeholder="Текстовое поле третье" id="expl-label-05" />
-								</div>
-								<div class="input-wrap">
-									<div class="label-holder">
-										<label for="expl-label-06">Пример селекта: <span class="form-mark">*</span></label>
-									</div>
-									<div class="select">
-										<select name="filter-type" id="expl-label-06">
-											<option value="1">Выбрать опшин</option>
-											<option value="2">Опшин</option>
-											<option value="3">Опшин длиннее</option>
-											<option value="4">Опшин очень-очень-очень-очень длинный</option>
+						<form action="">
+							<table>
+								<tbody>
+									<tr>
+										<td> Фамилия <i class="red">*</i></td>
+										<td>
+											<input name="s_name" value="" type="text">
+										</td>
+									</tr>
+									<tr>
+										<td> Имя <i class="red">*</i></td>
+										<td>
+											<input name="f_name" value="" type="text">
+										</td>
+									</tr>
+									<tr>
+										<td> Отчество<i class="red">*</i></td>
+										<td>
+											<input name="patronymic" value="" type="text">
+										</td>
+									</tr>
+									<tr>
+										<td> Дата рождения<i class="red">*</i></td>
+										<td>
+											<select name="birthday_day" id="" style="width:60px;" title="Please select something!" validate="required:true">
+												<option value="">день</option>
+												<option value="01">1</option>
+												<option value="02">2</option>
+												<option value="03">3</option>
+												<option value="04">4</option>
+												<option value="05">5</option>
+												<option value="06">6</option>
+												<option value="07">7</option>
+												<option value="08">8</option>
+												<option value="09">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+											</select> <select name="birthday_month" style="width:110px;" validate="required:true">
+											<option value="">месяц</option>
+											<option value="01">январь</option>
+											<option value="02">февраль</option>
+											<option value="03">март</option>
+											<option value="04">апрель</option>
+											<option value="05">май</option>
+											<option value="06">июнь</option>
+											<option value="07">июль</option>
+											<option value="08">август</option>
+											<option value="09">сентябрь</option>
+											<option value="10">октябрь</option>
+											<option value="11">ноябрь</option>
+											<option value="12">декабрь</option>
+										</select> <select name="birthday_year" id="birthday_year" style="width:66px;" validate="required:true">
+											<option value="">год</option>
+											<option value="1950">1950</option>
+											<option value="1951">1951</option>
+											<option value="1952">1952</option>
+											<option value="1953">1953</option>
+											<option value="1954">1954</option>
+											<option value="1955">1955</option>
+											<option value="1956">1956</option>
+											<option value="1957">1957</option>
+											<option value="1958">1958</option>
+											<option value="1959">1959</option>
+											<option value="1960">1960</option>
+											<option value="1961">1961</option>
+											<option value="1962">1962</option>
+											<option value="1963">1963</option>
+											<option value="1964">1964</option>
+											<option value="1965">1965</option>
+											<option value="1966">1966</option>
+											<option value="1967">1967</option>
+											<option value="1968">1968</option>
+											<option value="1969">1969</option>
+											<option value="1970">1970</option>
+											<option value="1971">1971</option>
+											<option value="1972">1972</option>
+											<option value="1973">1973</option>
+											<option value="1974">1974</option>
+											<option value="1975">1975</option>
+											<option value="1976">1976</option>
+											<option value="1977">1977</option>
+											<option value="1978">1978</option>
+											<option value="1979">1979</option>
+											<option value="1980">1980</option>
+											<option value="1981">1981</option>
+											<option value="1982">1982</option>
+											<option value="1983">1983</option>
+											<option value="1984">1984</option>
+											<option value="1985">1985</option>
+											<option value="1986">1986</option>
+											<option value="1987">1987</option>
+											<option value="1988">1988</option>
+											<option value="1989">1989</option>
+											<option value="1990">1990</option>
+											<option value="1991">1991</option>
+											<option value="1992">1992</option>
+											<option value="1993">1993</option>
+											<option value="1994">1994</option>
+											<option value="1995">1995</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
 										</select>
-									</div>
-								</div>
-							</div>
-							<div class="label-holder">
-								<label for="expl-label-07">Сообщение:</label>
-							</div>
-							<textarea placeholder="Сообщение" id="expl-label-07"></textarea>
-							<div class="form-row">
-								<div class="input-wrap">
-									<ul class="checkbox-list">
-										<li>
-											<input type="checkbox" name="checkbox-normal" id="checkbox-normal" />
-											<label for="checkbox-normal"><span>Normal</span></label>
-										</li>
-										<li>
-											<input type="checkbox" name="checkbox-checked" id="checkbox-checked" checked />
-											<label for="checkbox-checked"><span>Checked</span></label>
-										</li>
-										<li>
-											<input type="checkbox" name="checkbox-disabled" id="checkbox-disabled" disabled />
-											<label for="checkbox-disabled"><span>Disabled</span></label>
-										</li>
-										<li>
-											<input type="checkbox" name="checkbox-checked-disabled" id="checkbox-checked-disabled" checked disabled />
-											<label for="checkbox-checked-disabled"><span>Checked & Disabled</span></label>
-										</li>
-									</ul>
-								</div>
-								<div class="input-wrap">
-									<ul class="radio-list">
-										<li>
-											<input type="radio" name="radio-gender" id="radio-male" checked />
-											<label for="radio-male"><span>Male</span></label>
-										</li>
-										<li>
-											<input type="radio" name="radio-gender" id="radio-female" />
-											<label for="radio-female"><span>Female</span></label>
-										</li>
-										<li>
-											<input type="radio" name="radio-disabled" id="radio-disabled" disabled />
-											<label for="radio-disabled"><span>Disabled</span></label>
-										</li>
-										<li>
-											<input type="radio" name="radio-checked-disabled" id="radio-checked-disabled" checked disabled />
-											<label for="radio-checked-disabled"><span>Checked & Disabled</span></label>
-										</li>
-									</ul>
-								</div>
-							</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td> Контактный телефон (с указанием кода оператора)<i class="red">*</i></td>
+										<td>
+											<input type="text" name="contact_phone" class="contact_phone">
+										</td>
+									</tr>
+									<tr>
+										<td> Комментарий к телефону</td>
+										<td>
+											<input type="text" name="contact_phone_comment" class="contact_phone_comment">
+										</td>
+									</tr>
+									<tr>
+										<td> E-mail</td>
+										<td>
+											<input type="text" name="email" value="">
+										</td>
+									</tr>
+									<tr>
+										<td> Место получения кредита<i class="red">*</i></td>
+										<td>
+											<select name="credit_city" style="width:100%;" validate="required:true">
+												<!--<option value="1">ЦА 'ЗАО "ТРАСТБАНК", ул. Игнатенко 11, Минск</option>-->
+												<option value="101">ЦБУ 01/01 Брест</option>
+												<option value="102">ЦБУ 01/02 Барановичи</option>
+												<option value="103">ЦБУ 01/03 Пинск</option>
+												<option value="2">ЦБУ 07/01 Минск</option>
+												<option value="201">ЦБУ 02/01 Витебск</option>
+												<option value="202">ЦБУ 02/02 Полоцк</option>
+												<option value="203">Экспресс-представительство, Новополоцк</option>
+												<option value="301">ЦБУ 03/01 Гомель</option>
+												<option value="402">ЦБУ №04/02 Лида</option>
+												<option value="403">ЦБУ 04/03 Гродно</option>
+												<option value="503">ЦБУ 05/03 Борисов</option>
+												<option value="504">ЦБУ 05/04 Солигорск</option>
+												<option value="801">ЦБУ 08/01 Могилев</option>
+												<option value="802">ЦБУ 08/02 Бобруйск</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>Принятое на основании данной заявки решение, является предварительным и не является обязательством Банка предоставить кредит. Окончательное решение о выдаче кредита будет принято после моего личного обращения в Банк.</p>
+											<label>
+												<input name="agree" value="agree" type="checkbox" class="checkbox">
+												Согласен и подтверждаю.
+											</label>
+										</td>
+									</tr>
+									<tr class="trButton">
+										<td><span class="red">Поля, отмеченные <i class="red">*</i>, обязательны<br> для заполнения</span></td>
+										<td>
+											<button class="applicationBtn" name="sendCreditOrder" value="отправить заявку" onclick="_gaq.push(['_trackEvent', 'Заполнение онлайн-заявки на получение кредита', 'Нажатие на кнопку отправить заявку',,, false]);">отправить заявку</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</form>
 						<!--form style end-->
 
@@ -512,15 +602,184 @@
 
 				<!--sidebar-->
 				<aside class="sidebar">
-					SIDEBAR <br /> <br /> Lorem ipsum <a href="#">link text</a> dolor sit amet, consectetur adipisicing elit. Sunt asperiores.
+					<!--tab area-->
+					<div class="tab_area">
+						<div class="tab_default">
+							<ul>
+								<li class="active">
+									<div><a href="#x1" test="#x1"><span>Курсы банка</span></a></div>
+								</li>
+								<li>
+									<div><a href="#x2" test="#x2"><span>НБРБ</span></a></div>
+								</li>
+							</ul>
+							<div id="x1" class="tab">
+								<div class="accordion">
+									<div class="acco_block">
+										<strong class="toggler sel"><span>Курсы валют на 16.12.14 09:52</span></strong>
+										<div class="toggl_area">
+											<table class="curs">
+												<tbody><tr>
+													<th>&nbsp;</th>
+													<th>USD</th>
+													<th>EUR</th>
+													<th>RUB</th>
+													<th>GBP</th>
+												</tr>
+													<tr>
+														<td><span>покупка</span></td>
+														<td>10920</td>
+														<td>13500</td>
+														<td>170</td>
+														<td>16850</td>
+													</tr>
+													<tr>
+														<td><span>продажа</span></td>
+														<td>11020</td>
+														<td>13700</td>
+														<td>202</td>
+														<td>17200</td>
+													</tr>
+												</tbody></table>
+											<div class="arch">
+												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a>
+												<a href="http://gen/trustbank.by/exchange/trustbank/">Все курсы</a>
+											</div>
+											<p class="small">возможны изменения курсов в течение дня</p>
+										</div>
+									</div>
+									<div class="acco_block">
+										<strong class="toggler"><span>Курсы конверсии валют на 16.12.14</span></strong>
+										<div class="toggl_area" style="display:none;">
+											<table class="curs conversion">
+												<tbody><tr>
+													<th>&nbsp;</th>
+													<th>ПОКУПКА</th>
+													<th>ПРОДАЖА </th>
+												</tr>
+
+													<tr>
+														<td><span>EUR/USD</span></td>
+														<td>1.23</td>
+														<td>1.26</td>
+													</tr>
+													<!--
+													<tr>
+														<td><span>EUR/RUB</span></td>
+														<td>{EUR_RUB_buy}</td>
+														<td>{EUR_RUB_sale}</td>
+													</tr>
+													-->
+													<tr>
+														<td><span>USD/RUB</span></td>
+														<td>54</td>
+														<td>65</td>
+													</tr>
+
+													<tr>
+														<td><span>GBP/USD</span></td>
+														<td>1.55</td>
+														<td>1.58</td>
+													</tr>
+												</tbody></table>
+											<div class="arch">
+												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a>
+												<a href="http://gen/trustbank.by/exchange/trustbank/"> Все курсы</a></div>
+											<p class="small">возможны изменения курсов в течение дня</p>
+										</div>
+									</div>
+									<div class="acco_block">
+										<strong class="toggler"><span>Драгоценные металлы на 02.02.12</span></strong>
+										<div class="toggl_area" style="display:none;">
+											<table class="curs">
+												<tbody><tr>
+													<th>Золото</th>
+													<th>1 г</th>
+													<th>5 г</th>
+													<th>10 г</th>
+													<th>20 г</th>
+												</tr>
+													<tr>
+														<td><span>покупка</span></td>
+														<td>500000</td>
+														<td>2360000</td>
+														<td>4670000</td>
+														<td>9350000</td>
+													</tr>
+													<tr>
+														<td><span>продажа</span></td>
+														<td>560000</td>
+														<td>2650000</td>
+														<td>5250000</td>
+														<td>10450000</td>
+													</tr>
+												</tbody></table>
+											<div class="arch">
+												<a href="http://gen/trustbank.by/exchange/archive/dm/">Архив</a>
+												<a href="http://gen/trustbank.by/exchange/dm/">Все номиналы и цены</a></div>
+										</div>
+									</div>
+									<div class="acco_block">
+										<strong class="toggler"><span>Курсы банкоматов на 16.12.14</span></strong>
+										<div class="toggl_area" style="display: none">
+											<table class="curs">
+												<tbody><tr>
+													<th>&nbsp;</th>
+													<th>USD</th>
+													<th>EUR</th>
+												</tr>
+													<tr>
+														<td><span>покупка</span></td>
+														<td>10925</td>
+														<td>13500</td>
+													</tr>
+													<tr>
+														<td><span>продажа</span></td>
+														<td>11025</td>
+														<td>13700</td>
+													</tr>
+												</tbody></table>
+											<div class="arch">
+												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a>
+												<a href="http://gen/trustbank.by/exchange/trustbank/">Все курсы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="x2" class="tab" style="display: none">
+								<div class="accordion">
+									<div class="acco_block">
+										<strong class="toggler sel"><span>Курсы валют 20.03.10</span></strong>
+										<div class="toggl_area">
+											<table class="curs">
+												<tbody><tr>
+													<th>USD</th>
+													<th>EUR</th>
+													<th>RUB</th>
+													<th>GBP</th>
+												</tr>
+													<tr>
+														<td>2967</td>
+														<td>4040.46</td>
+														<td>101.41</td>
+														<td>4491.44</td>
+													</tr>
+												</tbody></table>
+										</div>
+									</div>
+
+									<div class="arch">
+										<a href="http://gen/trustbank.by/exchange/archive/trustbank/?nbrb=1">Архив</a>
+										<a href="http://gen/trustbank.by/exchange/trustbank/?nbrb=1">Все курсы</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--tab area end-->
 				</aside>
 				<!--sidebar-->
-
-				<!--aside-->
-				<aside class="aside">
-					ASIDE <br /> <br /> Lorem ipsum <a href="#">link text</a> dolor sit amet, consectetur adipisicing elit. Tempora labore!
-				</aside>
-				<!--aside end-->
 			</div>
 		</div>
 	</div>
@@ -553,6 +812,6 @@
 <!--Widgets-->
 <script src="js/widgets.js"></script>
 <!--Main functions-->
-<script src="js/functions.js"></script>
+<script src="js/my.js"></script>
 </body>
 </html>
