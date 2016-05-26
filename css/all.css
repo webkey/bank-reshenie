@@ -1,10 +1,62 @@
-@import url(fonts.css);
 @import url(normalize.css);
-@import url(sp.css);
 @import url(widgets.css);
 
 /*fonts*/
-/*@import url(fonts.css);*/
+/* corsicalx regular */
+@font-face {
+	font-family: 'corsicalx-regular';
+	src: url('../fonts/corsicalx/regular/corsicalx-regular.eot');
+	src: url('../fonts/corsicalx/regular/corsicalx-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/regular/corsicalx-regular.woff') format('woff'),
+	url('../fonts/corsicalx/regular/corsicalx-regular.ttf') format('truetype'),
+	url('../fonts/corsicalx/regular/corsicalx-regular.svg#corsicalx-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx italic */
+@font-face {
+	font-family: 'corsicalx-italic';
+	src: url('../fonts/corsicalx/italic/corsicalx-regularitalic.eot');
+	src: url('../fonts/corsicalx/italic/corsicalx-regularitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/italic/corsicalx-regularitalic.woff') format('woff'),
+	url('../fonts/corsicalx/italic/corsicalx-regularitalic.ttf') format('truetype'),
+	url('../fonts/corsicalx/italic/corsicalx-regularitalic.svg#corsicalx-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx bold */
+@font-face {
+	font-family: 'corsicalx-bold';
+	src: url('../fonts/corsicalx/bold/corsicalx-bold.eot');
+	src: url('../fonts/corsicalx/bold/corsicalx-bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/bold/corsicalx-bold.woff') format('woff'),
+	url('../fonts/corsicalx/bold/corsicalx-bold.ttf') format('truetype'),
+	url('../fonts/corsicalx/bold/corsicalx-bold.svg#corsicalx-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx bold italic */
+@font-face {
+	font-family: 'corsicalx-bold-italic';
+	src: url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.eot');
+	src: url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.woff') format('woff'),
+	url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.ttf') format('truetype'),
+	url('../fonts/corsicalx/bold-italic/corsicalx-bolditalic.svg#corsicalx-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* corsicalx light */
+@font-face {
+	font-family: 'corsicalx-light';
+	src: url('../fonts/corsicalx/light/corsicalx-light.eot');
+	src: url('../fonts/corsicalx/light/corsicalx-light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/corsicalx/light/corsicalx-light.woff') format('woff'),
+	url('../fonts/corsicalx/light/corsicalx-light.ttf') format('truetype'),
+	url('../fonts/corsicalx/light/corsicalx-light.svg#corsicalx-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 /*fonts end*/
 
 /*normalize*/
@@ -31,34 +83,35 @@ h1{
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #2c0078;
-	padding: 0 0 20px;
+	padding: 0 0 29px;
+	overflow: hidden;
 }
 h2{
 	font-size: 18px;
-	line-height: 22px;
+	line-height: 30px;
 	text-transform: uppercase;
 	color: #bd0022;
-	padding: 0 0 20px;
+	padding: 0 0 6px;
 }
 h3{
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 30px;
 	padding: 0 0 15px;
 }
 h4{
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 30px;
 	padding: 0 0 10px;
 }
 h5{
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 30px;
 	font-weight: 100;
 	padding: 0 0 5px;
 }
 h6{
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 30px;
 	font-weight: 100;
 	padding: 0 0 5px;
 }
@@ -205,6 +258,31 @@ form button:active{
 	background: #bd0022;
 }
 /*btn-default end*/
+
+/*view print*/
+.view-print{
+	float: right;
+	text-decoration: none;
+	margin: -3px 0 0 20px;
+}
+.depict-print{
+	display: inline-block;
+	vertical-align: top;
+	background: url(../img/depict-print.png) no-repeat;
+	width: 17px;
+	height: 14px;
+}
+.view-print>i{
+	width: 28px;
+	vertical-align: middle;
+}
+.view-print>span{
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: underline;
+}
+.view-print:hover>span{ text-decoration: none; }
+/*view print end*/
 /*btn end*/
 
 /*USER CONTENT*/
@@ -1035,8 +1113,40 @@ select{
 /*MAIN end*/
 
 /*SIDEBAR*/
+/*left menu*/
+.left_menu{
+	border: 1px solid #e6e6e6;
+	margin: 0 0 35px;
+	padding: 16px 20px;
+}
+.left_menu h3{
+	font: 14px/30px 'corsicalx-bold', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #bd0022;
+	padding: 0;
+}
+.left_menu h3 a{ text-decoration: none; }
+.left_menu h3 a:hover{ text-decoration: underline; }
+.left_menu .top ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	line-height: 17px;
+}
+.left_menu .top ul li{
+	padding-top: 13px;
+}
+.left_menu .top ul a{
+	color: #333;
+	padding-top: 3px;
+	text-decoration: none;
+}
+.left_menu .top ul a:hover{ color: #bd0022; }
+
+/*left menu end*/
 /*tabber*/
-.tab_area{ padding: 0 0 20px; }
+.tab_area{ padding: 0 0 35px; }
 .tab_default{ border: 1px solid #e6e6e6; }
 .tab_default ul{
 	position: relative;
@@ -1200,12 +1310,10 @@ select{
 .tab .arch > a:hover{
 	text-decoration: none;
 }
-/*SIDEBAR end*/
+/*tabber*/
 
-/*ASIDE*/
-.widget-group{
-	padding: 0 0 21px;
-}
+/*widget*/
+.widget-group{ padding: 0 0 36px; }
 .widget{
 	border: 1px solid #e6e6e6;
 	padding: 16px 20px;
@@ -1266,7 +1374,89 @@ select{
 	display: inline-block;
 	vertical-align: middle;
 }
-/*ASIDE end*/
+/*widget end*/
+/*pic slider*/
+.banners{
+	margin: 0 0 35px;
+	padding-bottom: 29px;
+	position: relative;
+	z-index: 1;
+	visibility: hidden;
+}
+.no-js .banners{ visibility: visible; }
+.banners__item{
+	position: relative;
+	overflow: hidden;
+}
+.banners__item a{
+	display: block;
+	overflow: hidden;
+	border: 1px solid #e6e6e6;
+}
+.banners__item img{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.banners .slick-dots{
+	z-index: 2;
+	margin: 0;
+	bottom: 0;
+	padding: 0;
+	line-height: 15px;
+}
+.banners .slick-dots li,
+.user-content .banners .slick-dots li,
+.user-content .banners .slick-dots li:first-child{
+	vertical-align: top;
+	padding: 5px 5px;
+	width: 21px;
+	height: 21px;
+	margin: 0;
+}
+.banners .slick-dots li button {
+	width: 11px;
+	height: 11px;
+	padding: 0;
+	border-radius: 0;
+	background: #2c0078;
+	border: none;
+	position: relative;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transition-property: background, border, box-shadow, -webkit-transform;
+	transition-property: background, border, box-shadow, transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	box-sizing: border-box;
+}
+.banners .slick-dots li button:before {
+	content: '';
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	height: 9px;
+	width: 9px;
+	background: #fff;
+	opacity: 1;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.banners .slick-dots li button:hover:before{
+	-webkit-transform: scale(0.8, 0.8);
+	-ms-transform: scale(0.8, 0.8);
+	transform: scale(0.8, 0.8);
+}
+.banners .slick-dots li.slick-active button:before{
+	-webkit-transform: scale(0, 0);
+	-ms-transform: scale(0, 0);
+	transform: scale(0, 0);
+}
+/*pic slider end*/
+/*SIDEBAR end*/
 
 /*FOOTER*/
 .footer-col{
@@ -1298,21 +1488,21 @@ select{
 .site-developer_logo{
 	display: inline-block;
 	vertical-align: top;
-	background: url(../img/img-developer.png) no-repeat top left;
+	background: url(../img/img-developer-2x.png) no-repeat top left;
 	-webkit-background-size: contain;
 	background-size: contain;
 	width: 80px;
 	height: 20px;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
 	text-indent: -9999px;
 	overflow: hidden;
 	font-size: 12px;
 	line-height: 24px;
+	margin: 3px 0 0;
 }
-.no-svg .site-developer_logo{ background-image: url(../img/img-developer-2x.png); }
-.site-developer a:hover .site-developer_logo{ box-shadow: 3px 3px 0 #2c0078; }
+.no-backgroundsize .site-developer_logo{ background-image: url(../img/img-developer.png); }
+.site-developer a:hover .site-developer_logo{ box-shadow: 2px 2px 0 #2c0078; }
 /*FOOTER end*/
 
 
