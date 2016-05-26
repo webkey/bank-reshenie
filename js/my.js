@@ -292,7 +292,7 @@ $(function () {
 });
 
 $(function () {
-	var $searchForm = $('.js-search-form');
+	var $searchForm = $('.search');
 	if (!$searchForm.length) {
 		return;
 	}
@@ -300,20 +300,14 @@ $(function () {
 	var $body = $('body');
 	var openedFormClass = 'form-opened';
 
-	$searchForm.on('click', '.js-search-open', function () {
-		$body.toggleClass(openedFormClass, !$body.hasClass(openedFormClass));
+	$searchForm.on('click', '.bt-opener', function () {
+		$body.addClass(openedFormClass);
 
 		focusingSearchForm();
 	});
-
-	$searchForm.on('click', 'input:submit', function () {
-		if(!$body.hasClass(openedFormClass)){
-			$body.addClass(openedFormClass);
-
-			focusingSearchForm();
-
-			return false;
-		}
+	
+	$searchForm.on('click', '.bt-close', function () {
+		$body.removeClass(openedFormClass);
 	});
 
 	function focusingSearchForm(){

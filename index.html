@@ -9,6 +9,8 @@
 	<!--Mobile optimized-->
 	<meta name="viewport" content="width=1000">
 	<meta name="MobileOptimized" content="1000">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<!--Favicon-->
 	<link href="favicon.ico" rel="shortcut icon">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -38,7 +40,9 @@
 				<div class="search">
 					<form action="http://gen/trustbank.by/search/" name="searchForm" method="get">
 						<a href="http://gen/trustbank.by/search/" class="bt" title="Найти" onclick="SubmitSearchForm(); return false;">Найти</a>
-						<input type="text" class="inputbox" value="Поиск" name="searchtext" onfocus="if(this.value == 'Поиск') this.value = ''" onblur="if(this.value == '') this.value = 'Поиск'">
+						<input type="text" class="inputbox" placeholder="Поиск" name="searchtext">
+						<a href="#" class="bt-close">Закрыть</a>
+						<a href="#" class="bt-opener">Поиск</a>
 					</form>
 				</div>
 				<!--search end-->
@@ -65,7 +69,7 @@
 			<div class="header__frame">
 				<div class="header__t">
 					<!--logo-->
-					<strong class="logo"><a href="#">Банк Решение</a></strong><!--logo end-->
+					<strong class="logo"><a href="#"><img src="img/logo.png" alt="Банк Решение" /></a></strong><!--logo end-->
 					<!--menu2-->
 					<ul class="menu2">
 						<li class="top jshover"><a href="http://gen/trustbank.by/private/cards/" class="root"><span>Частным клиентам</span></a>

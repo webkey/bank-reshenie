@@ -18,16 +18,6 @@ a,
 a:visited{
 	text-decoration: underline;
 }
-a[href]:after{
-	content: " (" attr(href) ")";
-}
-abbr[title]:after{
-	content: " (" attr(title) ")";
-}
-a[href^="#"]:after,
-a[href^="javascript:"]:after{
-	content: "";
-}
 pre,
 blockquote{
 	border: 1px solid #999;
@@ -53,3 +43,13 @@ h2,
 h3{
 	page-break-after: avoid;
 }
+.header__top,
+.header__b,
+.menu2,
+.sidebar,
+.aside,
+form,
+.print-hidden{
+	display: none !important;
+}
+.content-wrap .content{ margin: 0; }

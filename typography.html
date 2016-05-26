@@ -7,14 +7,17 @@
 	<meta charset="UTF-8">
 	<title>Банк Решение - Typography</title>
 	<!--Mobile optimized-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=1000">
+	<meta name="MobileOptimized" content="1000">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<!--Favicon-->
 	<link href="favicon.ico" rel="shortcut icon">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!--Main style-->
-	<link href="css/all.css" rel="stylesheet" media="screen">
+	<link href="css/all.css" rel="stylesheet" media="all">
+	<!--Print style-->
+	<link href="css/print.css" rel="stylesheet" media="print">
 	<!--Modernizr-->
 	<script src="js/vendor/modernizr-3.3.1.custom.min.js"></script>
 </head>
@@ -27,11 +30,98 @@
 	<!--header-->
 	<header class="header">
 		<div class="max-wrap">
-			<div class="header__holder">
-				<!--logo-->
-				<strong class="logo"><a href="#">WebSite</a></strong>
-				<!--logo end-->
-				<p>HEADER <br /><br /> Lorem ipsum dolor sit amet, <a href="#">link text</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+			<div class="header__top">
+				<!--lang-->
+				<div class="lang">
+					<a href="http://gen/trustbank.by/eng/">En</a>
+				</div>
+				<!--lang end-->
+				<!--search-->
+				<div class="search">
+					<form action="http://gen/trustbank.by/search/" name="searchForm" method="get">
+						<a href="http://gen/trustbank.by/search/" class="bt" title="Найти" onclick="SubmitSearchForm(); return false;">Найти</a>
+						<input type="text" class="inputbox" placeholder="Поиск" name="searchtext">
+						<a href="#" class="bt-close">Закрыть</a>
+						<a href="#" class="bt-opener">Поиск</a>
+					</form>
+				</div>
+				<!--search end-->
+				<!--social-->
+				<div class="social">
+					<a href="http://www.facebook.com/pages/%D0%97%D0%90%D0%9E-%D0%A2%D1%80%D0%B0%D1%81%D1%82%D0%B1%D0%B0%D0%BD%D0%BA/216331608426634" class="facebook" target="_blank">facebook</a>
+					<a href="http://twitter.com/#%21/trustbank_by" class="twitter" target="_blank">twitter</a>
+					<a href="http://vkontakte.ru/trustbank_by" class="vkontakte" target="_blank">vkontakte</a>
+					<a href="http://www.odnoklassniki.ru/group/51881001877607" class="odnoklassniki" target="_blank">odnoklassniki</a>
+				</div>
+				<!--social end-->
+				<!--main-nav-->
+				<nav class="main-nav">
+					<ul class="main-nav-list">
+						<li><a href="http://gen/trustbank.by/about/business-card/" class="here"><span>О банке</span></a></li>
+						<li><a href="http://gen/trustbank.by/news/trustbank/"><span>Новости</span></a></li>
+						<li><a href="http://gen/trustbank.by/offices/"><span>Офисы банка</span></a></li>
+						<li><a href="http://gen/trustbank.by/faq/"><span>Вопрос-ответ</span></a></li>
+						<li><a href="http://gen/trustbank.by/abuse/"><span>Пожаловаться</span></a></li>
+					</ul>
+				</nav>
+				<!--main-nav end-->
+			</div>
+			<div class="header__frame">
+				<div class="header__t">
+					<!--logo-->
+					<strong class="logo"><a href="#"><img src="img/logo.png" alt="Банк Решение" /></a></strong><!--logo end-->
+					<!--menu2-->
+					<ul class="menu2">
+						<li class="top jshover"><a href="http://gen/trustbank.by/private/cards/" class="root"><span>Частным клиентам</span></a>
+							<ul>
+								<li class="level2"><a href="http://gen/trustbank.by/private/cards/"><span>Банковские пластиковые карточки</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/loans/"><span>Кредитование</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/deposits/rouble/"><span>Вклады</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/currency-exchange/"><span>Валютно-обменные операции</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/remittances/"><span>Денежные переводы</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/safes-and-cells/"><span>Аренда сейфов и депозитарных ячеек</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/precious-metals-and-stones/"><span>Драгоценные металлы и камни</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/cash-settlements/"><span>Расчетно-кассовое обслуживание</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/current-accounts/"><span>Открытие и ведение текущих счетов</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/international-payments/"><span>Международные расчеты</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/private/internet/"><span>Интернет-банк</span></a></li>
+							</ul>
+						</li>
+						<li class="top"><a href="http://gen/trustbank.by/business/" class="root"><span>Юридическим лицам</span></a>
+							<ul>
+								<li class="level2"><a href="http://gen/trustbank.by/business/cash-settlements/"><span>Расчетно-кассовое обслуживание</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/crediting/loans/"><span>Кредитные операции</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/garantie-pour-la-vente/"><span>Залог на продажу</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/documentary/"><span>Торговое финансирование</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/salary-projects/"><span>Зарплатные проекты</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/stock-exchange/"><span>Валютно-обменные операции </span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/securities/"><span>Операции с ценными бумагами</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/cells/"><span>Аренда сейфов и депозитарных ячеек</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/foreign-trade/"><span>Обслуживание внешнеторговых операций</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/client-bank/"><span>Система “Клиент-банк”</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/internet/"><span>Интернет-банк</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/business/deposits/"><span>Депозитные операции</span></a></li>
+							</ul>
+						</li>
+						<li class="top"><a href="http://gen/trustbank.by/businessinfo/" class="root"><span>Бизнес-информация</span></a>
+							<ul>
+								<li class="level2"><a href="http://gen/trustbank.by/businessinfo/currency-legislation/"><span>Валютное законодательство</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/businessinfo/banking-law/"><span>Банковское законодательство</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/businessinfo/phone-codes/"><span>Телефонные коды</span></a></li>
+								<li class="level2"><a href="http://gen/trustbank.by/businessinfo/glossary/"><span>Словарь терминов</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<!--menu2 end-->
+				</div>
+				<div class="header__b">
+					<!--resource-->
+					<ul class="resource">
+						<li><a href="#"><i class="depict-ib"></i><span>Интернет-банк</span></a></li>
+						<li><a href="#"><i class="depict-ob"></i><span>Офисы банка</span></a></li>
+					</ul>
+					<!--resource end-->
+				</div>
 			</div>
 		</div>
 	</header>
@@ -598,6 +688,44 @@
 
 				<!--sidebar-->
 				<aside class="sidebar">
+					<!--left menu-->
+					<div class="left_menu">
+						<h3><a href="http://www.trustbank.by/about/">О банке</a></h3>
+						<div class="top">
+							<ul>
+								<li><a href="http://www.trustbank.by/about/business-card/">Визитная карточка</a></li>
+								<li><a href="http://www.trustbank.by/about/mission/">Миссия и история развития банка</a></li>
+								<li><a href="http://www.trustbank.by/about/ustav/">Устав</a></li>
+								<li><a href="http://www.trustbank.by/about/governance/">Органы управления</a></li>
+								<li><a href="http://www.trustbank.by/about/actioners/">Акционеры</a></li>
+								<li><a href="http://www.trustbank.by/about/holding/">Участие в банковских холдингах</a></li>
+								<li><a href="http://www.trustbank.by/about/licenses/">Лицензии</a></li>
+								<li><a href="http://www.trustbank.by/about/financial-statements/">Финансовая отчетность</a></li>
+								<li><a href="http://www.trustbank.by/about/correspondent-relations/">Корреспондентские отношения</a></li>
+								<li><a href="http://www.trustbank.by/about/legal/">Соблюдение требований законодательства Республики Беларусь</a></li>
+								<li><a href="http://www.trustbank.by/about/vacancies/">Вакансии</a></li>
+								<li><a href="http://www.trustbank.by/about/predlozh/" class="here">Пожаловаться</a></li>
+								<li><a href="http://www.trustbank.by/about/principles-ethics/">Принципы и стандарты профессиональной этики</a></li>
+							</ul>
+						</div>
+						<div class="bottom"><!--x--></div>
+					</div>
+					<!--left menu end-->
+
+					<!--banners-->
+					<div class="banners">
+						<div class="banners__item">
+							<a href="#"><img src="img/banners-img-01.jpg" alt="banner 1" /></a>
+						</div>
+						<div class="banners__item">
+							<a href="#"><img src="img/banners-img-02.jpg" alt="banner 2" /></a>
+						</div>
+						<div class="banners__item">
+							<a href="#"><img src="img/banners-img-03.jpg" alt="banner 3" /></a>
+						</div>
+					</div>
+					<!--banners end-->
+
 					<!--tab area-->
 					<div class="tab_area">
 						<div class="tab_default">
@@ -615,13 +743,14 @@
 										<strong class="toggler sel"><span>Курсы валют на 16.12.14 09:52</span></strong>
 										<div class="toggl_area">
 											<table class="curs">
-												<tbody><tr>
-													<th>&nbsp;</th>
-													<th>USD</th>
-													<th>EUR</th>
-													<th>RUB</th>
-													<th>GBP</th>
-												</tr>
+												<tbody>
+													<tr>
+														<th>&nbsp;</th>
+														<th>USD</th>
+														<th>EUR</th>
+														<th>RUB</th>
+														<th>GBP</th>
+													</tr>
 													<tr>
 														<td><span>покупка</span></td>
 														<td>10920</td>
@@ -636,10 +765,10 @@
 														<td>202</td>
 														<td>17200</td>
 													</tr>
-												</tbody></table>
+												</tbody>
+											</table>
 											<div class="arch">
-												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a>
-												<a href="http://gen/trustbank.by/exchange/trustbank/">Все курсы</a>
+												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a> <a href="http://gen/trustbank.by/exchange/trustbank/">Все курсы</a>
 											</div>
 											<p class="small">возможны изменения курсов в течение дня</p>
 										</div>
@@ -648,11 +777,12 @@
 										<strong class="toggler"><span>Курсы конверсии валют на 16.12.14</span></strong>
 										<div class="toggl_area" style="display:none;">
 											<table class="curs conversion">
-												<tbody><tr>
-													<th>&nbsp;</th>
-													<th>ПОКУПКА</th>
-													<th>ПРОДАЖА </th>
-												</tr>
+												<tbody>
+													<tr>
+														<th>&nbsp;</th>
+														<th>ПОКУПКА</th>
+														<th>ПРОДАЖА</th>
+													</tr>
 
 													<tr>
 														<td><span>EUR/USD</span></td>
@@ -677,10 +807,10 @@
 														<td>1.55</td>
 														<td>1.58</td>
 													</tr>
-												</tbody></table>
+												</tbody>
+											</table>
 											<div class="arch">
-												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a>
-												<a href="http://gen/trustbank.by/exchange/trustbank/"> Все курсы</a></div>
+												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a> <a href="http://gen/trustbank.by/exchange/trustbank/"> Все курсы</a></div>
 											<p class="small">возможны изменения курсов в течение дня</p>
 										</div>
 									</div>
@@ -688,13 +818,14 @@
 										<strong class="toggler"><span>Драгоценные металлы на 02.02.12</span></strong>
 										<div class="toggl_area" style="display:none;">
 											<table class="curs">
-												<tbody><tr>
-													<th>Золото</th>
-													<th>1 г</th>
-													<th>5 г</th>
-													<th>10 г</th>
-													<th>20 г</th>
-												</tr>
+												<tbody>
+													<tr>
+														<th>Золото</th>
+														<th>1 г</th>
+														<th>5 г</th>
+														<th>10 г</th>
+														<th>20 г</th>
+													</tr>
 													<tr>
 														<td><span>покупка</span></td>
 														<td>500000</td>
@@ -709,21 +840,22 @@
 														<td>5250000</td>
 														<td>10450000</td>
 													</tr>
-												</tbody></table>
+												</tbody>
+											</table>
 											<div class="arch">
-												<a href="http://gen/trustbank.by/exchange/archive/dm/">Архив</a>
-												<a href="http://gen/trustbank.by/exchange/dm/">Все номиналы и цены</a></div>
+												<a href="http://gen/trustbank.by/exchange/archive/dm/">Архив</a> <a href="http://gen/trustbank.by/exchange/dm/">Все номиналы и цены</a></div>
 										</div>
 									</div>
 									<div class="acco_block">
 										<strong class="toggler"><span>Курсы банкоматов на 16.12.14</span></strong>
 										<div class="toggl_area" style="display: none">
 											<table class="curs">
-												<tbody><tr>
-													<th>&nbsp;</th>
-													<th>USD</th>
-													<th>EUR</th>
-												</tr>
+												<tbody>
+													<tr>
+														<th>&nbsp;</th>
+														<th>USD</th>
+														<th>EUR</th>
+													</tr>
 													<tr>
 														<td><span>покупка</span></td>
 														<td>10925</td>
@@ -734,10 +866,10 @@
 														<td>11025</td>
 														<td>13700</td>
 													</tr>
-												</tbody></table>
+												</tbody>
+											</table>
 											<div class="arch">
-												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a>
-												<a href="http://gen/trustbank.by/exchange/trustbank/">Все курсы</a>
+												<a href="http://gen/trustbank.by/exchange/archive/trustbank/">Архив</a> <a href="http://gen/trustbank.by/exchange/trustbank/">Все курсы</a>
 											</div>
 										</div>
 									</div>
@@ -774,6 +906,26 @@
 						</div>
 					</div>
 					<!--tab area end-->
+
+					<!--widgets-->
+					<div class="widget-group">
+						<div class="widget">
+							<strong class="widget__dt"><a href="tel:8 801 1 003 333"><i class="depict-tel"></i><span>8 801 1 003 333</span></a></strong>
+							<div class="widget__dd">Бесплатные звонки с городского телефона на территории РБ</div>
+						</div>
+						<div class="widget">
+							<strong class="widget__dt"><a href="tel:+375 29 1 293 293"><i class="depict-velcom"></i><span>+375 29 1 293 293</span></a></strong>
+							<strong class="widget__dt"><a href="tel:+375 33 6 803 903"><i class="depict-mts"></i><span>+375 33 6 803 903</span></a></strong>
+							<strong class="widget__dt"><a href="tel:+375 25 6 803 903"><i class="depict-life"></i><span>+375 25 6 803 903</span></a></strong>
+							<div class="widget__dd">Оплата в соответствии
+								с тарифами операторов связи</div>
+						</div>
+						<div class="widget">
+							<strong class="widget__dt"><a href="tel:465"><i class="depict-phone"></i><span>465</span></a></strong>
+							<div class="widget__dd">Единый номер для абонентов мобильных операторов Velcom. Mts, Life.</div>
+						</div>
+					</div>
+					<!--widgets-->
 				</aside>
 				<!--sidebar-->
 			</div>
@@ -787,7 +939,15 @@
 <footer class="footer">
 	<div class="max-wrap">
 		<div class="footer-holder">
-			<p>FOOTER <br /> <br /> Lorem ipsum <a href="#">link text</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<div class="footer-col footer-col_left">
+				<span class="copyright">&copy; ЗАО «Банк Решение», 2016</span>
+			</div>
+			<div class="footer-col"><a href="#">Посетите сайт НБРБ</a></div>
+			<div class="footer-col footer-col_right">
+				<div class="site-developer">
+					<a href="http://astronim.by/"> <span class="text-inner">Разработка сайта</span> - <span class="site-developer_logo">Astronim*</span> </a>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
