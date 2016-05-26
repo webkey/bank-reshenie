@@ -581,6 +581,16 @@ select{
 	overflow: hidden;
 	position: relative;
 }
+.wrapper:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	margin-left: -500px;
+	width: 1000px;
+	background: #fff;
+}
 .header{
 	position: relative;
 	z-index: 5;
@@ -1272,7 +1282,7 @@ select{
 	cursor: default;
 }
 .tab .toggler>span{ border-bottom: 1px dotted #1a1a1a; }
-.tab .toggler.sel>span{ border-bottom-color: transparent; }
+.tab .toggler.sel>span, .tab .toggler:hover>span{ border-bottom-color: transparent; }
 .tab .small{
 	font: 10px/14px 'corsicalx-regular', Arial, Helvetica, sans-serif;
 	color: #1a1a1a;
